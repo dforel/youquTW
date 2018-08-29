@@ -13,9 +13,9 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="css/normalize.css">
 <link rel="stylesheet" href="css/font-awesome.css">
-<link rel="stylesheet" href="css/bootstrap.min.css">
+<link rel="stylesheet" href="css/bootstrap.min.css"> 
 <link rel="stylesheet" href="css/templatemo-style.css">
-<script src="js/vendor/modernizr-2.6.2.min.js"></script>
+<script src="js/vendor/modernizr-2.6.2.min.js"></script> 
 </head>
 <body>
 <!--[if lt IE 7]>
@@ -80,20 +80,23 @@
 		</ul>
 	</div>
 </div>
+<div> 
+	<canvas id="danmu" style="width:100%;height:410px;position: fixed" ></canvas>
+</div>
 <div class="copyrights">Collect from <a href="http://youqu.tw/" >有趣即正义</a></div>
 <div class="container" id="page-content">
 	<div class="row">
-
-
+ 
 		
 		<div class="col-md-9 col-sm-12 content-holder">
 			<!-- CONTENT -->
 			<div id="menu-container" style="margin-bottom: 100px;"> 
 				
 				<div id="menu-1" class="homepage home-section text-center">
+					
 					<div class="welcome-text">
 						<h2> <strong>有趣即正义</strong></h2>
-						<p> 试试这个加密功能吧 </p>
+						<p> 试试这个加密功能吧 ,点击转换的时候会自动发送弹幕，可能要等大概十秒钟才能看到，不喜欢的可以在发送下面取消自动发送 </p>
 						<form action="#" method="get" class="subscribe-form">
 							<div class="row">
 								<fieldset class="col-md-5">
@@ -101,9 +104,20 @@
 								</fieldset>
 
 								<fieldset class="col-md-2 ">
+									
+
 									<div  > 
 										<input name="submit" type="button" class="button default" id="jiami" value="转换">
 									</div>
+
+									<div style="margin-top:40px"> 
+											发送弹幕： 
+									</div>
+
+									<div class="switch" data-on="开" data-off="关">
+											<input type="checkbox" id ="toggle"  checked />
+									</div>
+
 
 									<div style="margin-top:30px" >  
 										<input name="submit" type="button" class="button default" id="jiemi" value="解密">
@@ -158,6 +172,9 @@
 <script src="js/plugins.js"></script>
 <script src="js/main.js"></script> 
 
+
+<script src="js/caption.js"></script> 
+<script src="js/danmu.js"></script> 
 
 </body>
 </html>

@@ -236,7 +236,7 @@ h1, h2, h3, h4, h5 {
   top: 0;
   left: 0;
   z-index: 1;
-  background: rgba(92, 180, 142, 0.4);
+  background: rgba(92, 180, 142, 0.2);
 }
 
 #page-content {
